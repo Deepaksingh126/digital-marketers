@@ -1,0 +1,279 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* font families  
+ 
+  font-family: "Sevillana", cursive;
+ 
+  font-family: "Barriecito", system-ui;
+
+  font-family: "Bad Script", cursive;
+ 
+ */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background-);
+}
+
+.flex {
+  display: flex;
+}
+
+:root {
+  --color-background-: #fff;
+  --light-blue-: #b281ff;
+  --dark-blue-: #7421f9;
+  --blue-backrgound-: #be98fc;
+  --landing-page-: #b281ff;
+}
+
+/* header styling */
+
+header {
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue-backrgound-);
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  padding-right: 4%;
+}
+
+nav .part1 {
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 2%;
+  padding: 0% 12px;
+  overflow: hidden;
+}
+
+nav .part1 a {
+  text-decoration: none;
+  color: black;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+nav .part1 a:hover {
+  background-color: var(--light-blue-);
+}
+
+nav .part2 {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .part2 h1 {
+  font-size: 200%;
+  font-family: "Barriecito", system-ui;
+  padding-left: 40%;
+}
+
+nav .part3 {
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+nav .part3 button {
+  border: 1.5px solid var(--dark-blue-);
+  border-radius: 12px;
+  padding: 4px 8px;
+  background-color: #ffffff5c;
+}
+
+nav .part3 button:hover {
+  background-color: var(--light-blue-);
+}
+
+/* landing page */
+.landing {
+  height: 100vh;
+  padding: 2vh 5vw;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--landing-page-);
+  overflow: hidden;
+}
+
+.landing .text {
+  width: 500px;
+}
+
+.landing .text h6 {
+  font-size: 1.5rem;
+}
+
+.landing h6 span {
+  font-size: 2rem;
+  padding: 2px 4px;
+  background-color: #ffffff42;
+}
+
+.landing .text p {
+  margin: 20px 0px;
+  font-size: 16px;
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+}
+
+.landing .text .social-media {
+  margin-bottom: 10px;
+}
+
+.landing .text .social-media a i {
+  color: black;
+  font-size: 25px;
+  padding: 5px 4px;
+  margin: 0px 6px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.landing .text .social-media a i:hover {
+  background-color: var(--dark-blue-);
+}
+
+.landing .text .more {
+  background-color: #ffffff45;
+  border-radius: 20px;
+  padding: 7px 5px;
+  width: 90%;
+}
+
+.landing .text .more a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.landing .img {
+  width: 70%;
+}
+
+.landing .img img {
+  width: 100%;
+}
+
+/* about paGE STYLING */
+.work {
+  flex-direction: column;
+  padding: 8% 10%;
+}
+
+.work h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Bad Script", cursive;
+  font-size: 40px;
+}
+
+.work p {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 16px;
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+}
+
+.work .card-sec {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work .card-sec .card {
+  border-radius: 15px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--blue-backrgound-);
+  width: 274px;
+}
+
+.work .card-sec .card img {
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 24px;
+}
+
+.work .card-sec .card h5 {
+  font-size: 20px;
+  line-height: 0%;
+  text-align: center;
+}
+
+.work .card-sec .card p {
+  font-size: 14px;
+}
+
+.work .card-sec .card a {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 12px;
+  text-decoration: none;
+  padding: 4px;
+  text-align: center;
+}
+
+.work .card-sec .card a i {
+  margin-left: 12px;
+}
+
+/* styling of blckbox copied code */
+
+form {
+  background-color: var(--blue-backrgound-);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+form button {
+  background-color: black;
+}
+
+
+/* footer */
+footer {
+  background-color: var(--light-blue-);
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  nav .part1 {
+    display: none;
+  }
+
+  nav .flex {
+    width: 50%;
+    justify-content: space-around;
+  }
+}
